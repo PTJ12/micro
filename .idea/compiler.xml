@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="micro-redis" />
+        <module name="micro-elasticsearch" />
+        <module name="simple-api" />
+        <module name="admin-api" />
+        <module name="simple-boot" />
+        <module name="admin-boot" />
+        <module name="micro-public" />
+        <module name="micro-rabbitmq" />
+        <module name="simple-consumer" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="micro-utils" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="admin-api" options="" />
+      <module name="admin-boot" options="" />
+      <module name="micro-elasticsearch" options="" />
+      <module name="micro-rabbitmq" options="" />
+      <module name="micro-redis" options="" />
+      <module name="simple-api" options="" />
+      <module name="simple-boot" options="" />
+      <module name="simple-consumer" options="" />
+    </option>
+  </component>
+</project>
