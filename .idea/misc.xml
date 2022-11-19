@@ -12,6 +12,7 @@
         <option value="$PROJECT_DIR$/admin-api/pom.xml" />
         <option value="$PROJECT_DIR$/micro-common/micro-utils/pom.xml" />
         <option value="$PROJECT_DIR$/micro-redis/pom.xml" />
+        <option value="$PROJECT_DIR$/micro-simple/pom.xml" />
       </set>
     </option>
   </component>

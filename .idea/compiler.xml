@@ -8,18 +8,21 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="micro-redis" />
+        <module name="micro-auth" />
         <module name="micro-elasticsearch" />
-        <module name="simple-api" />
         <module name="admin-api" />
-        <module name="simple-boot" />
         <module name="admin-boot" />
         <module name="micro-public" />
+        <module name="micro-gateway" />
         <module name="micro-rabbitmq" />
-        <module name="simple-consumer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="micro-simple" target="1.8" />
       <module name="micro-utils" target="1.8" />
+      <module name="simple-api" target="1.8" />
+      <module name="simple-boot" target="1.8" />
+      <module name="simple-consumer" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
