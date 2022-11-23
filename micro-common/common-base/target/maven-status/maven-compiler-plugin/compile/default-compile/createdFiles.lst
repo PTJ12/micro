@@ -1,0 +1,9 @@
+xpit\top\utils\CopyBeanUtils.class
+xpit\top\utils\BeanCopyUtils.class
+xpit\top\enums\HttpCodeEnum.class
+xpit\top\constant\MicroConstants.class
+xpit\top\entity\BaseEntity.class
+xpit\top\utils\CopySourceName.class
+xpit\top\constant\GlobalContracts.class
+xpit\top\result\Result.class
+xpit\top\utils\DateUtils.class

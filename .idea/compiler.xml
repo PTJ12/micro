@@ -7,17 +7,25 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="micro-redis" />
-        <module name="micro-auth" />
-        <module name="micro-elasticsearch" />
-        <module name="admin-api" />
-        <module name="admin-boot" />
-        <module name="micro-public" />
+        <module name="common-mybatis" />
+        <module name="auction-api" />
         <module name="micro-gateway" />
-        <module name="micro-rabbitmq" />
+        <module name="common-redis" />
+        <module name="common-base" />
+        <module name="auction-boot" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="admin-api" target="11" />
+      <module name="admin-boot" target="11" />
+      <module name="common-mybatis-plus" target="11" />
+      <module name="micro-admin" target="11" />
+      <module name="micro-auth" target="11" />
+      <module name="micro-elasticsearch" target="1.8" />
+      <module name="micro-public" target="1.8" />
+      <module name="micro-rabbitmq" target="1.8" />
+      <module name="micro-redis" target="1.8" />
+      <module name="micro-robot" target="1.8" />
       <module name="micro-simple" target="1.8" />
       <module name="micro-utils" target="1.8" />
       <module name="simple-api" target="1.8" />

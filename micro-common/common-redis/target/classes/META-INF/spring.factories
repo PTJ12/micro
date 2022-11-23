@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  xpit.top.config.RedisConfig,\
+  xpit.top.util.RedisCache

@@ -1,0 +1,73 @@
+server:
+  port: ${random.int[20000,29999]} # 网关端口
+
+
+
+spring:
+  application:
+    name: auction # 服务名称
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    nacos:
+      server-addr: localhost:8848 # nacos地址
+  # 数据源配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/auction?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: qwer1234
+    hikari:
+      # 连接池名
+      pool-name: DateHikariCP
+      # 最小空闲连接数
+      minimum-idle: 5
+      # 空闲连接存活最大时间，默认600000（10分钟）
+      idle-timeout: 180000
+      # 最大连接数，默认10
+      maximum-pool-size: 10
+      # 从连接池返回的连接的自动提交
+      auto-commit: true
+      # 连接最大存活时间，0表示永久存活，默认1800000（30分钟）
+      max-lifetime: 1800000
+      # 连接超时时间，默认30000（30秒）
+      connection-timeout: 30000
+      # 测试连接是否可用的查询语句
+      connection-test-query: SELECT 1
+  redis:
+    # Redis数据库索引（默认为0）
+    database: 1
+    # Redis服务器地址
+    host: 127.0.0.1
+    # Redis服务器连接端口
+    port: 6379
+    # Redis服务器连接密码（默认为空）
+    password:
+    # 连接超时时间
+    timeout: 10s
+    lettuce:
+      pool:
+        # 连接池最大连接数
+        max-active: 200
+        # 连接池最大阻塞等待时间（使用负值表示没有限制）
+        max-wait: -1ms
+        # 连接池中的最大空闲连接
+        max-idle: 10
+        # 连接池中的最小空闲连接
+        min-idle: 0
+
+# Mybatis-plus配置
+mybatis-plus:
+  #配置Mapper映射文件
+  mapper-locations: classpath*:/mapper/*Mapper.xml
+  # 配置MyBatis数据返回类型别名（默认别名是类名）
+  type-aliases-package: xpit.top.pojo.entity
+  configuration:
+    # 自动驼峰命名
+    map-underscore-to-camel-case: true
+
+web3j:
+  admin-client: true
+  client-address: http://1.15.74.74:8545
+  http-timeout-seconds: 600
+  network-id: 1337

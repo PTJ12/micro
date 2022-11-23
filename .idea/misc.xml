@@ -5,13 +5,22 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/micro-auction/auction-api/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/admin-api/pom.xml" />
+        <option value="$PROJECT_DIR$/micro-admin/pom.xml" />
+        <option value="$PROJECT_DIR$/micro-auth/pom.xml" />
+        <option value="$PROJECT_DIR$/micro-common/common-mybatis-plus/pom.xml" />
+        <option value="$PROJECT_DIR$/micro-common/micro-elasticsearch/pom.xml" />
+        <option value="$PROJECT_DIR$/micro-common/micro-rabbitmq/pom.xml" />
+        <option value="$PROJECT_DIR$/micro-common/micro-redis/pom.xml" />
         <option value="$PROJECT_DIR$/micro-common/micro-utils/pom.xml" />
+        <option value="$PROJECT_DIR$/micro-public/pom.xml" />
         <option value="$PROJECT_DIR$/micro-redis/pom.xml" />
+        <option value="$PROJECT_DIR$/micro-robot/pom.xml" />
         <option value="$PROJECT_DIR$/micro-simple/pom.xml" />
       </set>
     </option>

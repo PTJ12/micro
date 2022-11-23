@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  xpit.top.config.MybatisPlusConfig,\
+  xpit.top.handler.MyMetaObjectHandler
